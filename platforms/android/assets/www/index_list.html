@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="initial-scale=1,width=device-width" />
+
+    <title>test</title>
+
+    <link rel="stylesheet" href="jquery.mobile-1.3.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>login.php</h1>
+        </div>
+        <div data-role="content">
+            <p>You tried to login as "
+                <strong>
+                    <?php echo $_POST[ 'username']; ?>
+                </strong>"</p>
+            <p>You used "
+                <strong>
+                    <?php echo $_POST[ 'password']; ?>
+                </strong>" as your password</p>
+            <p>The input element with type="hidden" contained "
+                <strong>
+                    <?php echo $_POST[ 'hiddenInput']; ?>
+                </strong>"</p>
+            <a href="jqm_simple_form.html" data-rel="back" data-role="button">Go Back</a>
+
+
+            <ul data-role="listview">
+                <li data-role="list-divider">List Items with Links and a Count</li>
+                <li><a href="#">Bugs<span class="ui-li-count">5</span></a>
+                </li>
+                <li><a href="#">Comments<span class="ui-li-count">12</span></a>
+                </li>
+                <li><a href="#">Suggestions<span class="ui-li-count">8</span></a>
+                </li>
+                <li><a href="#">Tickets<span class="ui-li-count">27</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
